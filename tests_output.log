@@ -1,0 +1,419 @@
+
+==================================================
+2022-09-21 22:44:15.275089 - TEST STARTED: test_demo_app_register_api_status_code2022-09-21 22:44:15.445721 - Executed POST request
+2022-09-21 22:44:15.445721 - URL: http://127.0.0.1:8080/register
+2022-09-21 22:44:15.445721 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-21 22:44:15.445721 - RESPONSE STATUS CODE: 2002022-09-21 22:44:15.446097 - 
+2022-09-21 22:44:15.446097 - Executed assertion:
+2022-09-21 22:44:15.446097 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:44:15.446097 - RESULT: True2022-09-21 22:44:15.446253 - 
+2022-09-21 22:44:15.446253 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-21 22:44:15.446253 - TIME ELAPSED: 0:00:00.170946
+==================================================
+2022-09-21 22:44:15.447937 - TEST STARTED: test_demo_get_users_data2022-09-21 22:44:15.451330 - 
+2022-09-21 22:44:15.451330 - Executed assertion:
+2022-09-21 22:44:15.451330 - EXPRESSION: Yes TestUser found in List
+2022-09-21 22:44:15.451330 - RESULT: True2022-09-21 22:44:15.451539 - 
+2022-09-21 22:44:15.451539 - TEST FINISHED: test_demo_get_users_data
+2022-09-21 22:44:15.451539 - TIME ELAPSED: 0:00:00.003435
+==================================================
+2022-09-21 22:44:15.453163 - TEST STARTED: test_demo_get_auth_token2022-09-21 22:44:15.598517 - 
+2022-09-21 22:44:15.598517 - Executed assertion:
+2022-09-21 22:44:15.598517 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:44:15.598517 - RESULT: True2022-09-21 22:44:15.598798 - Auth Token Response: Mjk0NDEyNDcwNTQxOTkxNTY1NzU2NzAzNzk0NzkwNjY3MDgwMTM=2022-09-21 22:44:15.603668 - 
+2022-09-21 22:44:15.603668 - Executed assertion:
+2022-09-21 22:44:15.603668 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:44:15.603668 - RESULT: True2022-09-21 22:44:15.603974 - 
+2022-09-21 22:44:15.603974 - Executed assertion:
+2022-09-21 22:44:15.603974 - EXPRESSION: User data have "Status" Value where actual value [SUCCESS] is equal to expected value [SUCCESS]
+2022-09-21 22:44:15.603974 - RESULT: True2022-09-21 22:44:15.604137 - 
+2022-09-21 22:44:15.604137 - Executed assertion:
+2022-09-21 22:44:15.604137 - EXPRESSION: User data have "First Name" Value where actual value [Test] is equal to expected value [Test]
+2022-09-21 22:44:15.604137 - RESULT: True2022-09-21 22:44:15.604387 - 
+2022-09-21 22:44:15.604387 - Executed assertion:
+2022-09-21 22:44:15.604387 - EXPRESSION: User data have "Last Name" Value where actual value [User] is equal to expected value [User]
+2022-09-21 22:44:15.604387 - RESULT: True2022-09-21 22:44:15.604514 - 
+2022-09-21 22:44:15.604514 - Executed assertion:
+2022-09-21 22:44:15.604514 - EXPRESSION: User data have "Phone Number" Value where actual value [123456789] is equal to expected value [123456789]
+2022-09-21 22:44:15.604514 - RESULT: True2022-09-21 22:44:15.604750 - 
+2022-09-21 22:44:15.604750 - TEST FINISHED: test_demo_get_auth_token
+2022-09-21 22:44:15.604750 - TIME ELAPSED: 0:00:00.150931
+==================================================
+2022-09-21 22:44:15.606270 - TEST STARTED: test_demo_update_user_data2022-09-21 22:44:15.751476 - 
+2022-09-21 22:44:15.751476 - Executed assertion:
+2022-09-21 22:44:15.751476 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:44:15.751476 - RESULT: True2022-09-21 22:44:15.758599 - 
+2022-09-21 22:44:15.758599 - Executed assertion:
+2022-09-21 22:44:15.758599 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [201] is equal to expected value [201]
+2022-09-21 22:44:15.758599 - RESULT: True2022-09-21 22:44:15.758860 - 
+2022-09-21 22:44:15.758860 - TEST FINISHED: test_demo_update_user_data
+2022-09-21 22:44:15.758860 - TIME ELAPSED: 0:00:00.152409
+==================================================
+2022-09-21 22:46:48.507172 - TEST STARTED: test_demo_app_register_api_status_code2022-09-21 22:46:48.521527 - Executed POST request
+2022-09-21 22:46:48.521527 - URL: http://127.0.0.1:8080/register
+2022-09-21 22:46:48.521527 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-21 22:46:48.521527 - RESPONSE STATUS CODE: 2002022-09-21 22:46:48.521808 - 
+2022-09-21 22:46:48.521808 - Executed assertion:
+2022-09-21 22:46:48.521808 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:46:48.521808 - RESULT: True2022-09-21 22:46:48.522127 - 
+2022-09-21 22:46:48.522127 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-21 22:46:48.522127 - TIME ELAPSED: 0:00:00.014566
+==================================================
+2022-09-21 22:46:48.525442 - TEST STARTED: test_demo_get_users_data2022-09-21 22:46:48.532011 - 
+2022-09-21 22:46:48.532011 - Executed assertion:
+2022-09-21 22:46:48.532011 - EXPRESSION: Yes TestUser found in List
+2022-09-21 22:46:48.532011 - RESULT: True2022-09-21 22:46:48.532276 - 
+2022-09-21 22:46:48.532276 - TEST FINISHED: test_demo_get_users_data
+2022-09-21 22:46:48.532276 - TIME ELAPSED: 0:00:00.006580
+==================================================
+2022-09-21 22:46:48.533939 - TEST STARTED: test_demo_get_auth_token2022-09-21 22:46:48.676823 - 
+2022-09-21 22:46:48.676823 - Executed assertion:
+2022-09-21 22:46:48.676823 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:46:48.676823 - RESULT: True2022-09-21 22:46:48.677110 - Auth Token Response: MzA1NzIyNzQyMzQ3NTA5NzU0MDI3NDk1MTEyNDIwMTk3NDk1OTg02022-09-21 22:46:48.681875 - 
+2022-09-21 22:46:48.681875 - Executed assertion:
+2022-09-21 22:46:48.681875 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:46:48.681875 - RESULT: True2022-09-21 22:46:48.682099 - 
+2022-09-21 22:46:48.682099 - Executed assertion:
+2022-09-21 22:46:48.682099 - EXPRESSION: User data have "Status" Value where actual value [SUCCESS] is equal to expected value [SUCCESS]
+2022-09-21 22:46:48.682099 - RESULT: True
+==================================================
+2022-09-21 22:46:48.727650 - TEST STARTED: test_demo_update_user_data2022-09-21 22:46:48.868656 - 
+2022-09-21 22:46:48.868656 - Executed assertion:
+2022-09-21 22:46:48.868656 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:46:48.868656 - RESULT: True2022-09-21 22:46:48.873974 - 
+2022-09-21 22:46:48.873974 - Executed assertion:
+2022-09-21 22:46:48.873974 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [201] is equal to expected value [201]
+2022-09-21 22:46:48.873974 - RESULT: True2022-09-21 22:46:48.874346 - 
+2022-09-21 22:46:48.874346 - TEST FINISHED: test_demo_update_user_data
+2022-09-21 22:46:48.874346 - TIME ELAPSED: 0:00:00.146511
+==================================================
+2022-09-21 22:48:22.231854 - TEST STARTED: test_demo_app_register_api_status_code2022-09-21 22:48:22.243265 - Executed POST request
+2022-09-21 22:48:22.243265 - URL: http://127.0.0.1:8080/register
+2022-09-21 22:48:22.243265 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-21 22:48:22.243265 - RESPONSE STATUS CODE: 2002022-09-21 22:48:22.243517 - 
+2022-09-21 22:48:22.243517 - Executed assertion:
+2022-09-21 22:48:22.243517 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:48:22.243517 - RESULT: True2022-09-21 22:48:22.243681 - 
+2022-09-21 22:48:22.243681 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-21 22:48:22.243681 - TIME ELAPSED: 0:00:00.011599
+==================================================
+2022-09-21 22:48:22.245025 - TEST STARTED: test_demo_get_users_data2022-09-21 22:48:22.248259 - 
+2022-09-21 22:48:22.248259 - Executed assertion:
+2022-09-21 22:48:22.248259 - EXPRESSION: Yes TestUser found in List
+2022-09-21 22:48:22.248259 - RESULT: True2022-09-21 22:48:22.248655 - 
+2022-09-21 22:48:22.248655 - TEST FINISHED: test_demo_get_users_data
+2022-09-21 22:48:22.248655 - TIME ELAPSED: 0:00:00.003315
+==================================================
+2022-09-21 22:48:22.250670 - TEST STARTED: test_demo_get_auth_token2022-09-21 22:48:22.394779 - 
+2022-09-21 22:48:22.394779 - Executed assertion:
+2022-09-21 22:48:22.394779 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:48:22.394779 - RESULT: True2022-09-21 22:48:22.395065 - Auth Token Response: NDA3NjI2MTUxMTQ0ODQwMjA0MTIzNDU5ODIxMzU5NTI5MTAyMDI=2022-09-21 22:48:22.399830 - 
+2022-09-21 22:48:22.399830 - Executed assertion:
+2022-09-21 22:48:22.399830 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:48:22.399830 - RESULT: True2022-09-21 22:48:22.400063 - 
+2022-09-21 22:48:22.400063 - Executed assertion:
+2022-09-21 22:48:22.400063 - EXPRESSION: User data have "Status" Value where actual value [SUCCESS] is equal to expected value [SUCCESS]
+2022-09-21 22:48:22.400063 - RESULT: True
+==================================================
+2022-09-21 22:48:22.449460 - TEST STARTED: test_demo_update_user_data2022-09-21 22:48:22.590277 - 
+2022-09-21 22:48:22.590277 - Executed assertion:
+2022-09-21 22:48:22.590277 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:48:22.590277 - RESULT: True2022-09-21 22:48:22.594220 - 
+2022-09-21 22:48:22.594220 - Executed assertion:
+2022-09-21 22:48:22.594220 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [201] is equal to expected value [201]
+2022-09-21 22:48:22.594220 - RESULT: True2022-09-21 22:48:22.594435 - 
+2022-09-21 22:48:22.594435 - TEST FINISHED: test_demo_update_user_data
+2022-09-21 22:48:22.594435 - TIME ELAPSED: 0:00:00.144769
+==================================================
+2022-09-21 22:48:33.928669 - TEST STARTED: test_demo_app_register_api_status_code2022-09-21 22:48:33.938917 - Executed POST request
+2022-09-21 22:48:33.938917 - URL: http://127.0.0.1:8080/register
+2022-09-21 22:48:33.938917 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-21 22:48:33.938917 - RESPONSE STATUS CODE: 2002022-09-21 22:48:33.939160 - 
+2022-09-21 22:48:33.939160 - Executed assertion:
+2022-09-21 22:48:33.939160 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:48:33.939160 - RESULT: True2022-09-21 22:48:33.939335 - 
+2022-09-21 22:48:33.939335 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-21 22:48:33.939335 - TIME ELAPSED: 0:00:00.010399
+==================================================
+2022-09-21 22:48:33.941401 - TEST STARTED: test_demo_get_users_data2022-09-21 22:48:33.945458 - 
+2022-09-21 22:48:33.945458 - Executed assertion:
+2022-09-21 22:48:33.945458 - EXPRESSION: Yes TestUser found in List
+2022-09-21 22:48:33.945458 - RESULT: True2022-09-21 22:48:33.945658 - 
+2022-09-21 22:48:33.945658 - TEST FINISHED: test_demo_get_users_data
+2022-09-21 22:48:33.945658 - TIME ELAPSED: 0:00:00.004127
+==================================================
+2022-09-21 22:48:33.947296 - TEST STARTED: test_demo_get_auth_token2022-09-21 22:48:34.090220 - 
+2022-09-21 22:48:34.090220 - Executed assertion:
+2022-09-21 22:48:34.090220 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:48:34.090220 - RESULT: True2022-09-21 22:48:34.090618 - Auth Token Response: MTY2ODU1OTMyNzY3ODQ3MTM4OTM4ODc4NTYxODI3OTI3MzI5Mzg42022-09-21 22:48:34.095289 - 
+2022-09-21 22:48:34.095289 - Executed assertion:
+2022-09-21 22:48:34.095289 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:48:34.095289 - RESULT: True2022-09-21 22:48:34.095534 - 
+2022-09-21 22:48:34.095534 - Executed assertion:
+2022-09-21 22:48:34.095534 - EXPRESSION: User data have "Status" Value where actual value [SUCCESS] is equal to expected value [SUCCESS]
+2022-09-21 22:48:34.095534 - RESULT: True
+==================================================
+2022-09-21 22:48:34.146934 - TEST STARTED: test_demo_update_user_data2022-09-21 22:48:34.289506 - 
+2022-09-21 22:48:34.289506 - Executed assertion:
+2022-09-21 22:48:34.289506 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:48:34.289506 - RESULT: True2022-09-21 22:48:34.294729 - 
+2022-09-21 22:48:34.294729 - Executed assertion:
+2022-09-21 22:48:34.294729 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [201] is equal to expected value [201]
+2022-09-21 22:48:34.294729 - RESULT: True2022-09-21 22:48:34.295030 - 
+2022-09-21 22:48:34.295030 - TEST FINISHED: test_demo_update_user_data
+2022-09-21 22:48:34.295030 - TIME ELAPSED: 0:00:00.147898
+==================================================
+2022-09-21 22:49:36.639398 - TEST STARTED: test_demo_app_register_api_status_code2022-09-21 22:49:36.806667 - Executed POST request
+2022-09-21 22:49:36.806667 - URL: http://127.0.0.1:8080/register
+2022-09-21 22:49:36.806667 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-21 22:49:36.806667 - RESPONSE STATUS CODE: 2002022-09-21 22:49:36.806972 - 
+2022-09-21 22:49:36.806972 - Executed assertion:
+2022-09-21 22:49:36.806972 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:49:36.806972 - RESULT: True2022-09-21 22:49:36.807163 - 
+2022-09-21 22:49:36.807163 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-21 22:49:36.807163 - TIME ELAPSED: 0:00:00.167462
+==================================================
+2022-09-21 22:49:36.808757 - TEST STARTED: test_demo_get_users_data2022-09-21 22:49:36.812482 - 
+2022-09-21 22:49:36.812482 - Executed assertion:
+2022-09-21 22:49:36.812482 - EXPRESSION: Yes TestUser found in List
+2022-09-21 22:49:36.812482 - RESULT: True2022-09-21 22:49:36.812704 - 
+2022-09-21 22:49:36.812704 - TEST FINISHED: test_demo_get_users_data
+2022-09-21 22:49:36.812704 - TIME ELAPSED: 0:00:00.003773
+==================================================
+2022-09-21 22:49:36.814362 - TEST STARTED: test_demo_get_auth_token2022-09-21 22:49:36.950646 - 
+2022-09-21 22:49:36.950646 - Executed assertion:
+2022-09-21 22:49:36.950646 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:49:36.950646 - RESULT: True2022-09-21 22:49:36.950870 - Auth Token Response: MzE1MjY4MzUyNjY0MDk2Mjg2OTQ1NjM0Nzk3MDgxMzI4MjQ4MDYx2022-09-21 22:49:36.955032 - 
+2022-09-21 22:49:36.955032 - Executed assertion:
+2022-09-21 22:49:36.955032 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:49:36.955032 - RESULT: True2022-09-21 22:49:36.955242 - 
+2022-09-21 22:49:36.955242 - Executed assertion:
+2022-09-21 22:49:36.955242 - EXPRESSION: User data have "Status" Value where actual value [SUCCESS] is equal to expected value [SUCCESS]
+2022-09-21 22:49:36.955242 - RESULT: True2022-09-21 22:49:36.955420 - 
+2022-09-21 22:49:36.955420 - Executed assertion:
+2022-09-21 22:49:36.955420 - EXPRESSION: User data have "First Name" Value where actual value [Test] is equal to expected value [Test]
+2022-09-21 22:49:36.955420 - RESULT: True2022-09-21 22:49:36.955609 - 
+2022-09-21 22:49:36.955609 - Executed assertion:
+2022-09-21 22:49:36.955609 - EXPRESSION: User data have "Last Name" Value where actual value [User] is equal to expected value [User]
+2022-09-21 22:49:36.955609 - RESULT: True2022-09-21 22:49:36.955755 - 
+2022-09-21 22:49:36.955755 - Executed assertion:
+2022-09-21 22:49:36.955755 - EXPRESSION: User data have "Phone Number" Value where actual value [123456789] is equal to expected value [123456789]
+2022-09-21 22:49:36.955755 - RESULT: True2022-09-21 22:49:36.955886 - 
+2022-09-21 22:49:36.955886 - TEST FINISHED: test_demo_get_auth_token
+2022-09-21 22:49:36.955886 - TIME ELAPSED: 0:00:00.141386
+==================================================
+2022-09-21 22:49:36.957475 - TEST STARTED: test_demo_update_user_data2022-09-21 22:49:37.098574 - 
+2022-09-21 22:49:37.098574 - Executed assertion:
+2022-09-21 22:49:37.098574 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:49:37.098574 - RESULT: True2022-09-21 22:49:37.105427 - 
+2022-09-21 22:49:37.105427 - Executed assertion:
+2022-09-21 22:49:37.105427 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [201] is equal to expected value [201]
+2022-09-21 22:49:37.105427 - RESULT: True2022-09-21 22:49:37.105696 - 
+2022-09-21 22:49:37.105696 - TEST FINISHED: test_demo_update_user_data
+2022-09-21 22:49:37.105696 - TIME ELAPSED: 0:00:00.148021
+==================================================
+2022-09-21 22:49:40.044196 - TEST STARTED: test_demo_app_register_api_status_code2022-09-21 22:49:40.055441 - Executed POST request
+2022-09-21 22:49:40.055441 - URL: http://127.0.0.1:8080/register
+2022-09-21 22:49:40.055441 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-21 22:49:40.055441 - RESPONSE STATUS CODE: 2002022-09-21 22:49:40.055702 - 
+2022-09-21 22:49:40.055702 - Executed assertion:
+2022-09-21 22:49:40.055702 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:49:40.055702 - RESULT: True2022-09-21 22:49:40.055863 - 
+2022-09-21 22:49:40.055863 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-21 22:49:40.055863 - TIME ELAPSED: 0:00:00.011486
+==================================================
+2022-09-21 22:49:40.057950 - TEST STARTED: test_demo_get_users_data2022-09-21 22:49:40.061753 - 
+2022-09-21 22:49:40.061753 - Executed assertion:
+2022-09-21 22:49:40.061753 - EXPRESSION: Yes TestUser found in List
+2022-09-21 22:49:40.061753 - RESULT: True2022-09-21 22:49:40.061952 - 
+2022-09-21 22:49:40.061952 - TEST FINISHED: test_demo_get_users_data
+2022-09-21 22:49:40.061952 - TIME ELAPSED: 0:00:00.003846
+==================================================
+2022-09-21 22:49:40.063574 - TEST STARTED: test_demo_get_auth_token2022-09-21 22:49:40.200134 - 
+2022-09-21 22:49:40.200134 - Executed assertion:
+2022-09-21 22:49:40.200134 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:49:40.200134 - RESULT: True2022-09-21 22:49:40.200323 - Auth Token Response: MjkxODI2MDQ2ODg3MjMxOTk1NDk1OTk3NTgwNjQxMzkyNDA3NTcx2022-09-21 22:49:40.203564 - 
+2022-09-21 22:49:40.203564 - Executed assertion:
+2022-09-21 22:49:40.203564 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:49:40.203564 - RESULT: True2022-09-21 22:49:40.203737 - 
+2022-09-21 22:49:40.203737 - Executed assertion:
+2022-09-21 22:49:40.203737 - EXPRESSION: User data have "Status" Value where actual value [SUCCESS] is equal to expected value [SUCCESS]
+2022-09-21 22:49:40.203737 - RESULT: True
+==================================================
+2022-09-21 22:49:40.249470 - TEST STARTED: test_demo_update_user_data2022-09-21 22:49:40.391592 - 
+2022-09-21 22:49:40.391592 - Executed assertion:
+2022-09-21 22:49:40.391592 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:49:40.391592 - RESULT: True2022-09-21 22:49:40.396830 - 
+2022-09-21 22:49:40.396830 - Executed assertion:
+2022-09-21 22:49:40.396830 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [201] is equal to expected value [201]
+2022-09-21 22:49:40.396830 - RESULT: True2022-09-21 22:49:40.397070 - 
+2022-09-21 22:49:40.397070 - TEST FINISHED: test_demo_update_user_data
+2022-09-21 22:49:40.397070 - TIME ELAPSED: 0:00:00.147386
+==================================================
+2022-09-21 22:50:15.182646 - TEST STARTED: test_demo_app_register_api_status_code2022-09-21 22:50:15.338800 - Executed POST request
+2022-09-21 22:50:15.338800 - URL: http://127.0.0.1:8080/register
+2022-09-21 22:50:15.338800 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-21 22:50:15.338800 - RESPONSE STATUS CODE: 2002022-09-21 22:50:15.339054 - 
+2022-09-21 22:50:15.339054 - Executed assertion:
+2022-09-21 22:50:15.339054 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:50:15.339054 - RESULT: True2022-09-21 22:50:15.339234 - 
+2022-09-21 22:50:15.339234 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-21 22:50:15.339234 - TIME ELAPSED: 0:00:00.156420
+==================================================
+2022-09-21 22:50:15.340754 - TEST STARTED: test_demo_get_users_data2022-09-21 22:50:15.343897 - 
+2022-09-21 22:50:15.343897 - Executed assertion:
+2022-09-21 22:50:15.343897 - EXPRESSION: Yes TestUser found in List
+2022-09-21 22:50:15.343897 - RESULT: True2022-09-21 22:50:15.344088 - 
+2022-09-21 22:50:15.344088 - TEST FINISHED: test_demo_get_users_data
+2022-09-21 22:50:15.344088 - TIME ELAPSED: 0:00:00.003215
+==================================================
+2022-09-21 22:50:15.345484 - TEST STARTED: test_demo_get_auth_token2022-09-21 22:50:15.486965 - 
+2022-09-21 22:50:15.486965 - Executed assertion:
+2022-09-21 22:50:15.486965 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:50:15.486965 - RESULT: True2022-09-21 22:50:15.487255 - Auth Token Response: MjEwOTM3NDgxNTY2Njg5NDE3ODcwMTI2ODM2NDU1OTQzMDY2NjU52022-09-21 22:50:15.492252 - 
+2022-09-21 22:50:15.492252 - Executed assertion:
+2022-09-21 22:50:15.492252 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:50:15.492252 - RESULT: True2022-09-21 22:50:15.492504 - 
+2022-09-21 22:50:15.492504 - Executed assertion:
+2022-09-21 22:50:15.492504 - EXPRESSION: User data have "Status" Value where actual value [SUCCESS] is equal to expected value [SUCCESS]
+2022-09-21 22:50:15.492504 - RESULT: True2022-09-21 22:50:15.492772 - 
+2022-09-21 22:50:15.492772 - Executed assertion:
+2022-09-21 22:50:15.492772 - EXPRESSION: User data have "First Name" Value where actual value [Test] is equal to expected value [Test]
+2022-09-21 22:50:15.492772 - RESULT: True2022-09-21 22:50:15.492942 - 
+2022-09-21 22:50:15.492942 - Executed assertion:
+2022-09-21 22:50:15.492942 - EXPRESSION: User data have "Last Name" Value where actual value [User] is equal to expected value [User]
+2022-09-21 22:50:15.492942 - RESULT: True2022-09-21 22:50:15.493175 - 
+2022-09-21 22:50:15.493175 - Executed assertion:
+2022-09-21 22:50:15.493175 - EXPRESSION: User data have "Phone Number" Value where actual value [123456789] is equal to expected value [123456789]
+2022-09-21 22:50:15.493175 - RESULT: True2022-09-21 22:50:15.493354 - 
+2022-09-21 22:50:15.493354 - TEST FINISHED: test_demo_get_auth_token
+2022-09-21 22:50:15.493354 - TIME ELAPSED: 0:00:00.147649
+==================================================
+2022-09-21 22:50:15.495457 - TEST STARTED: test_demo_update_user_data2022-09-21 22:50:15.639119 - 
+2022-09-21 22:50:15.639119 - Executed assertion:
+2022-09-21 22:50:15.639119 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-21 22:50:15.639119 - RESULT: True2022-09-21 22:50:15.645625 - 
+2022-09-21 22:50:15.645625 - Executed assertion:
+2022-09-21 22:50:15.645625 - EXPRESSION: Status code of http://127.0.0.1:8080/api/users/TestUser endpoint actual value [201] is equal to expected value [201]
+2022-09-21 22:50:15.645625 - RESULT: True2022-09-21 22:50:15.645880 - 
+2022-09-21 22:50:15.645880 - TEST FINISHED: test_demo_update_user_data
+2022-09-21 22:50:15.645880 - TIME ELAPSED: 0:00:00.150111
+==================================================
+2022-09-22 17:59:10.055574 - TEST STARTED: test_demo_app_register_api_status_code2022-09-22 17:59:10.281237 - Executed POST request
+2022-09-22 17:59:10.281237 - URL: http://127.0.0.1:8080/register
+2022-09-22 17:59:10.281237 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-22 17:59:10.281237 - RESPONSE STATUS CODE: 2002022-09-22 17:59:10.281461 - 
+2022-09-22 17:59:10.281461 - Executed assertion:
+2022-09-22 17:59:10.281461 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-22 17:59:10.281461 - RESULT: True2022-09-22 17:59:10.281633 - 
+2022-09-22 17:59:10.281633 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-22 17:59:10.281633 - TIME ELAPSED: 0:00:00.225584
+==================================================
+2022-09-22 17:59:10.283866 - TEST STARTED: test_demo_get_users_data2022-09-22 17:59:10.287793 - 
+2022-09-22 17:59:10.287793 - Executed assertion:
+2022-09-22 17:59:10.287793 - EXPRESSION: Yes TestUser found in List
+2022-09-22 17:59:10.287793 - RESULT: True2022-09-22 17:59:10.288269 - 
+2022-09-22 17:59:10.288269 - TEST FINISHED: test_demo_get_users_data
+2022-09-22 17:59:10.288269 - TIME ELAPSED: 0:00:00.004023
+==================================================
+2022-09-22 17:59:10.289745 - TEST STARTED: test_demo_get_auth_token
+==================================================
+2022-09-22 17:59:10.289952 - TEST STARTED: return_auth_token2022-09-22 17:59:10.489581 - 
+2022-09-22 17:59:10.489581 - Executed assertion:
+2022-09-22 17:59:10.489581 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-22 17:59:10.489581 - RESULT: True2022-09-22 17:59:10.489818 - Auth Token Response: ODAyNDQyODA4NDA2NTg1OTQ3NzM3MjA3MTAwNDE5OTI5MjgxNTQ=2022-09-22 17:59:10.490092 - 
+2022-09-22 17:59:10.490092 - TEST FINISHED: return_auth_token
+2022-09-22 17:59:10.490092 - TIME ELAPSED: 0:00:00.199820
+==================================================
+2022-09-22 17:59:10.556096 - TEST STARTED: test_demo_update_user_data
+==================================================
+2022-09-22 17:59:10.556535 - TEST STARTED: return_auth_token2022-09-22 17:59:10.734663 - 
+2022-09-22 17:59:10.734663 - Executed assertion:
+2022-09-22 17:59:10.734663 - EXPRESSION: Status code of http://127.0.0.1:8080/api/auth/token endpoint actual value [200] is equal to expected value [200]
+2022-09-22 17:59:10.734663 - RESULT: True2022-09-22 17:59:10.734968 - Auth Token Response: MzMzNDU5NzU1Nzk0OTM2MDQ1MDI4MzczODA4MTcyMTI1NDExMDA42022-09-22 17:59:10.735102 - 
+2022-09-22 17:59:10.735102 - TEST FINISHED: return_auth_token
+2022-09-22 17:59:10.735102 - TIME ELAPSED: 0:00:00.178427
+==================================================
+2022-09-22 23:35:44.405950 - TEST STARTED: test_demo_app_register_api_status_code2022-09-22 23:35:44.420462 - Executed POST request
+2022-09-22 23:35:44.420462 - URL: http://127.0.0.1:8080/register
+2022-09-22 23:35:44.420462 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-22 23:35:44.420462 - RESPONSE STATUS CODE: 2002022-09-22 23:35:44.421834 - 
+2022-09-22 23:35:44.421834 - Executed assertion:
+2022-09-22 23:35:44.421834 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-22 23:35:44.421834 - RESULT: True2022-09-22 23:35:44.422041 - 
+2022-09-22 23:35:44.422041 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-22 23:35:44.422041 - TIME ELAPSED: 0:00:00.015864
+==================================================
+2022-09-22 23:35:44.425757 - TEST STARTED: test_demo_get_users_data2022-09-22 23:35:44.433335 - 
+2022-09-22 23:35:44.433335 - Executed assertion:
+2022-09-22 23:35:44.433335 - EXPRESSION: Yes TestUser found in List
+2022-09-22 23:35:44.433335 - RESULT: True2022-09-22 23:35:44.433709 - 
+2022-09-22 23:35:44.433709 - TEST FINISHED: test_demo_get_users_data
+2022-09-22 23:35:44.433709 - TIME ELAPSED: 0:00:00.007655
+==================================================
+2022-09-22 23:35:44.436637 - TEST STARTED: test_demo_get_auth_token
+==================================================
+2022-09-22 23:35:44.690098 - TEST STARTED: test_demo_update_user_data
+==================================================
+2022-09-22 23:36:46.353833 - TEST STARTED: test_demo_app_register_api_status_code2022-09-22 23:36:46.367286 - Executed POST request
+2022-09-22 23:36:46.367286 - URL: http://127.0.0.1:8080/register
+2022-09-22 23:36:46.367286 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-22 23:36:46.367286 - RESPONSE STATUS CODE: 2002022-09-22 23:36:46.367587 - 
+2022-09-22 23:36:46.367587 - Executed assertion:
+2022-09-22 23:36:46.367587 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-22 23:36:46.367587 - RESULT: True2022-09-22 23:36:46.367837 - 
+2022-09-22 23:36:46.367837 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-22 23:36:46.367837 - TIME ELAPSED: 0:00:00.013798
+==================================================
+2022-09-22 23:36:46.369997 - TEST STARTED: test_demo_get_users_data2022-09-22 23:36:46.373842 - 
+2022-09-22 23:36:46.373842 - Executed assertion:
+2022-09-22 23:36:46.373842 - EXPRESSION: Yes TestUser found in List
+2022-09-22 23:36:46.373842 - RESULT: True2022-09-22 23:36:46.374094 - 
+2022-09-22 23:36:46.374094 - TEST FINISHED: test_demo_get_users_data
+2022-09-22 23:36:46.374094 - TIME ELAPSED: 0:00:00.003947
+==================================================
+2022-09-22 23:36:46.375831 - TEST STARTED: test_demo_get_auth_token
+==================================================
+2022-09-22 23:36:46.595560 - TEST STARTED: test_demo_update_user_data
+==================================================
+2022-09-22 23:37:11.899997 - TEST STARTED: test_demo_app_register_api_status_code2022-09-22 23:37:11.909643 - Executed POST request
+2022-09-22 23:37:11.909643 - URL: http://127.0.0.1:8080/register
+2022-09-22 23:37:11.909643 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-22 23:37:11.909643 - RESPONSE STATUS CODE: 2002022-09-22 23:37:11.909955 - 
+2022-09-22 23:37:11.909955 - Executed assertion:
+2022-09-22 23:37:11.909955 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-22 23:37:11.909955 - RESULT: True2022-09-22 23:37:11.910088 - 
+2022-09-22 23:37:11.910088 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-22 23:37:11.910088 - TIME ELAPSED: 0:00:00.009949
+==================================================
+2022-09-22 23:37:11.924282 - TEST STARTED: test_demo_get_users_data2022-09-22 23:37:11.933613 - 
+2022-09-22 23:37:11.933613 - Executed assertion:
+2022-09-22 23:37:11.933613 - EXPRESSION: Yes TestUser found in List
+2022-09-22 23:37:11.933613 - RESULT: True2022-09-22 23:37:11.933882 - 
+2022-09-22 23:37:11.933882 - TEST FINISHED: test_demo_get_users_data
+2022-09-22 23:37:11.933882 - TIME ELAPSED: 0:00:00.009425
+==================================================
+2022-09-22 23:37:11.937064 - TEST STARTED: test_demo_get_auth_token
+==================================================
+2022-09-22 23:37:12.270074 - TEST STARTED: test_demo_update_user_data
+==================================================
+2022-09-22 23:53:08.033255 - TEST STARTED: test_demo_app_register_api_status_code2022-09-22 23:53:08.049483 - Executed POST request
+2022-09-22 23:53:08.049483 - URL: http://127.0.0.1:8080/register
+2022-09-22 23:53:08.049483 - PARAMETERS: {'username': 'TestUser', 'password': '1234', 'firstname': 'Test', 'lastname': 'User', 'phone': '123456789'}
+2022-09-22 23:53:08.049483 - RESPONSE STATUS CODE: 2002022-09-22 23:53:08.049737 - 
+2022-09-22 23:53:08.049737 - Executed assertion:
+2022-09-22 23:53:08.049737 - EXPRESSION: Status code of http://127.0.0.1:8080/register endpoint actual value [200] is equal to expected value [200]
+2022-09-22 23:53:08.049737 - RESULT: True2022-09-22 23:53:08.049953 - 
+2022-09-22 23:53:08.049953 - TEST FINISHED: test_demo_app_register_api_status_code
+2022-09-22 23:53:08.049953 - TIME ELAPSED: 0:00:00.016418
+==================================================
+2022-09-22 23:53:08.051981 - TEST STARTED: test_demo_get_users_data2022-09-22 23:53:08.056411 - 
+2022-09-22 23:53:08.056411 - Executed assertion:
+2022-09-22 23:53:08.056411 - EXPRESSION: Yes TestUser found in List
+2022-09-22 23:53:08.056411 - RESULT: True2022-09-22 23:53:08.056747 - 
+2022-09-22 23:53:08.056747 - TEST FINISHED: test_demo_get_users_data
+2022-09-22 23:53:08.056747 - TIME ELAPSED: 0:00:00.004619
+==================================================
+2022-09-22 23:53:08.059445 - TEST STARTED: test_demo_get_auth_token
+==================================================
+2022-09-22 23:53:08.320405 - TEST STARTED: test_demo_update_user_data
